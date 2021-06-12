@@ -1,0 +1,114 @@
+.products {
+  background-color: #333;
+  padding: 10px 0;
+  margin-bottom: 1px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.p6 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-size: 35px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.p7 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 40px;
+}
+
+.pro {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.text {
+  width: 20%;
+}
+
+.single {
+  width: 30%;
+}
+
+.img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.8rem;
+  font-size: 25px;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.price {
+  font-family: "Dancing Script", cursive;
+  color: #698f3f;
+  font-size: 20px;
+  letter-spacing: 0.5rem;
+  margin-top: -10px;
+}
+
+@media (max-width: 1190px) {
+  .text {
+    padding-bottom: 20px;
+  }
+  .title {
+    letter-spacing: 0.8rem;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 970px) {
+  .products {
+    display: block;
+  }
+  .pro {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .text {
+    margin: 30px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 740px) {
+  .pro {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .single {
+    width: 47%;
+    margin-bottom: 40px;
+  }
+  .text {
+    width: 70%;
+  }
+  .title {
+    letter-spacing: 0.5rem;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 610px) {
+  .single {
+    width: 100%;
+  }
+  .text {
+    width: 85%;
+  }
+}

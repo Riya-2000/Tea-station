@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@500&display=swap");
+
+.btn {
+  background-color: #698f3f;
+  color: #333;
+  letter-spacing: 0.2rem;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  outline-offset: 4px;
+  outline: 4px solid #698f3f;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  color: white;
+}
+
+.p3 {
+  font-family: "Dancing Script", cursive;
+  color: #698f3f;
+  font-size: 45px;
+  letter-spacing: 0.3rem;
+  margin: 10px 0;
+}
+
+.p4 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 35px;
+  font-weight: lighter;
+  color: #333;
+}
+
+.p5 {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 40px;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  margin-left: 20px;
+}
+
+.image {
+  background-image: url("./images/about-bcg.jpeg");
+  width: 700px;
+  height: 380px;
+  background-size: cover;
+  border: 10px solid #698f3f;
+  border-radius: 10px;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.image:hover {
+  background-image: linear-gradient(rgb(255, 0, 0, 0.2), rgb(255, 0, 0, 0.2)),
+    url("./images/about-bcg.jpeg");
+}
+
+@media (max-width: 1100px) {
+  .image {
+    height: 400px;
+    width: 100%;
+    margin-right: 0;
+  }
+  .cont {
+    flex-wrap: wrap;
+    width: 78%;
+  }
+}
+
+@media (max-width: 700px) {
+  .image {
+    height: 300px;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@500&display=swap");
+
+body {
+  margin: 0;
+}
+@keyframes para1 {
+  0% {
+    transform: translateX(2000px);
+  }
+  30% {
+    transform: translateX(-300px);
+  }
+  70% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("./images/main-bcg.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.para2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5rem;
+  width: 60%;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  animation-name: para2;
+  animation-duration: 3s;
+}
+
+@keyframes para2 {
+  0% {
+    transform: translateX(-2000px);
+  }
+  30% {
+    transform: translateX(300px);
+  }
+  70% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.para1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.6rem;
+  width: 60%;
+  color: #698f3f;
+  animation-name: para1;
+  animation-duration: 3s;
+}
+
+@keyframes para1 {
+  0% {
+    transform: translateX(2000px);
+  }
+  30% {
+    transform: translateX(-300px);
+  }
+  70% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.exp {
+  background-color: #698f3f;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  padding: 20px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  outline-offset: 4px;
+  outline: 4px solid #698f3f;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.exp:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  color: white;
+}
+
+.line {
+  height: 10px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #698f3f,
+    rgb(255, 174, 0),
+    #698f3f
+  );
+}

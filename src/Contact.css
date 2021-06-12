@@ -1,0 +1,76 @@
+.p8 {
+  font-family: "Dancing Script", cursive;
+  color: #698f3f;
+  letter-spacing: 0.3rem;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.info {
+  color: #333;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+  margin-top: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.i {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #698f3f;
+}
+
+.contact {
+  width: 90%;
+  margin: 20px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: flex-start;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #698f3f;
+  margin: 25px 0;
+  outline: none;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  color: #333;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  color: #698f3f;
+  letter-spacing: 0.1rem;
+  font-size: 20px;
+}
+
+@media (min-width: 1000px) {
+  .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+  form {
+    width: 50%;
+  }
+  .address {
+    width: 50%;
+  }
+}

@@ -1,0 +1,80 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e5e5e5;
+  height: 100%;
+  width: 280px;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+
+.side {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bars {
+  color: #698f3f;
+  animation-name: bars;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes bars {
+  0% {
+    font-size: 30px;
+    padding: 20px;
+  }
+  50% {
+    padding: 10px;
+    font-size: 50px;
+  }
+  100% {
+    font-size: 30px;
+    padding: 20px;
+  }
+}
+
+.show {
+  transform: translateX(0);
+}
+
+.hide {
+  transform: translateX(-280px);
+}
+
+.menu {
+  margin-left: 30px;
+  width: 150px;
+}
+
+.opt {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #698f3f;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.opt:hover {
+  color: #53742e;
+}
+
+.close {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+  .hide {
+    transform: translateX(-600px);
+  }
+}

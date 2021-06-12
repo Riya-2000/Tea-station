@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e5e5;
+  width: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.skill:hover {
+  background-color: #698f3f;
+}
+.skill:hover .p1 {
+  color: #fff;
+}
+.skill:hover .icon {
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+.p1 {
+  font-family: "Baloo Tammudu 2", cursive;
+  color: #698f3f;
+  font-size: 22px;
+  letter-spacing: 0.4rem;
+  transition: all 0.5s ease-in-out;
+  cursor: default;
+}
+
+.p2 {
+  font-family: "Baloo Tammudu 2", cursive;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-top: -15px;
+  color: #333;
+  padding-bottom: 20px;
+  cursor: default;
+}
+
+.icon {
+  font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 1350px) {
+  .skill {
+    width: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill {
+    width: 100%;
+  }
+}
